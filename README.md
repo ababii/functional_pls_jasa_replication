@@ -1,4 +1,4 @@
-JASA Reproducibility Materials Template
+JASA Reproducibility Materials
 ================
 
 This repository contains the replication files for Babii, Carrasco, Tsafack "Functional partial least-squares: adaptive estimation and inference". The repository consisting of the following three Jupyter notebooks:
