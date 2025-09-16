@@ -1,0 +1,54 @@
+===============
+DATA DICTIONARY
+===============
+
+## Overview
+This file describes variables in the corn.csv and soybeans.csv datasets used for the empirical analysis in 
+"Functional Partial Least-Squares: Adaptive Estimation and Inference".
+
+## Data Sources: the original study of Schlenker & Roberts (PNAS, 2009) compiled a dataset from publicly available sources:
+- Weather Data: PRISM Climate Group (Parameter-elevation Regressions on Independent Slopes Model)
+- Yield Data: USDA National Agricultural Statistics Service (NASS)
+- Sample Period: 1950-2020
+- Unit of Analysis: county-year observations
+
+## Variables
+### fips
+- Type: Integer
+- Description: Federal Information Processing Standards county code
+- Range: 5-digit codes (e.g., 01001 for Autauga County, Alabama)
+- Notes: Unique identifier for each U.S. county
+
+### year
+- Type: Integer  
+- Description: Calendar year of observation
+- Range: 1950-2020
+- Notes: Panel dimension for county-year data
+
+### prec
+- Type: Continuous
+- Description: Total precipitation during growing season
+- Units: Millimeters  
+- Source: PRISM Climate Group
+- Notes: Critical control variable for crop growth
+
+### time-5C through time40C  
+- Type: Continuous
+- Description: Cumulative days at temperature T°C or above during growing season
+- Units: Days
+- Range: 0-200+ days per growing season
+- Source: PRISM Climate Group daily temperature data
+- Transformation: Cumulative time exposure
+- Notes: 46 variables total (time-5C, time-4C, ..., time40C)
+
+### yield
+- Type: Continuous
+- Description: crop yield
+- Units: bushels per acre
+- Source: USDA NASS
+- Notes: Outcome
+
+## References
+- Schlenker, W., & Roberts, M. J. (2009). Nonlinear temperature effects indicate severe damages to U.S. crop yields under climate change. PNAS, 106(37), 15594-15598.
+- PRISM Climate Group: https://prism.oregonstate.edu/
+- USDA NASS: https://www.nass.usda.gov/
