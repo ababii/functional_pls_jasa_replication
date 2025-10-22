@@ -2,7 +2,8 @@
 
 This repository contains code to reproduce the results in  
 **“Functional Partial Least-Squares: Adaptive Estimation and Inference”**  
-by Andrii Babii, Marine Carrasco, and Idriss Tsafack.
+by Andrii Babii, Marine Carrasco, and Idriss Tsafack.  
+**Journal:** *Journal of the American Statistical Association, Theory and Methods* (forthcoming).
 
 ## Contents
 1. **data_cleaning.ipynb** — Python notebook to prepare data.  
