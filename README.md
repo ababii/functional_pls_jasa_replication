@@ -7,7 +7,7 @@ by Andrii Babii, Marine Carrasco, and Idriss Tsafack.
 
 ## Contents
 1. **data_cleaning.ipynb** — Python notebook to prepare data.  
-   - Raw data source (Schlenker & Roberts, 2009 replication package):  
+   - Raw data source (replication package for Schlenker & Roberts, PNAS 2009):  
      https://www.wolfram-schlenker.info/replicationFiles/SchlenkerRoberts2009.zip  
    - We also provide two cleaned CSVs (`corn.csv`, `soybeans.csv`) inside `data.zip`.
 2. **empirical_application.ipynb** — Python notebook producing the empirical results using the cleaned data.
